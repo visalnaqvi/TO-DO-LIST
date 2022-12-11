@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <!-- mainWrap gives all content specified width on deferent devices -->
+    <div class="mainwrap">
+
+        <!-- top part with input filed and submit button -->
+        <div class="input-holder">
+            <input type="text" placeholder="Add Your Item" id="input">
+            <button id="submit">ADD</button>
+        </div>
+
+        <!-- filter and total task count -->
+        <div class="filter">
+            <p>All Tasks : <span id="totalTasks">0</span></p><br>
+            <p><span id="all" class="active">All</span> | <span id="done">Completed</span> | <span id="undone">Incomplete</span></p>
+        </div>
+
+        <!-- task list an li template is commented here to understand html structure of signle li -->
+        <ul class="list">
+            <!-- <li class="done">
+                <div class="left">
+                    <h4 class="title" id="title">Heading</h4>
+                </div>
+                <div class="right">
+                    <div class="check-box undone done" id="checkBox">
+                        <img src="./assest/check_bold.svg" id="check">
+                    </div>
+                    <div class="check-box delete">
+                    <img src="./assest/trash_full.svg" id="delete">
+                    </div>
+                </div>
+            </li> -->
+        </ul>
+      
+    </div>
+    <script src="./app.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyA53jayAIfdO2njuZxqJoZsg5KnJcw4LW8",
+          authDomain: "visal-projects.firebaseapp.com",
+          projectId: "visal-projects",
+          storageBucket: "visal-projects.appspot.com",
+          messagingSenderId: "637776269001",
+          appId: "1:637776269001:web:cf47412605acb339928718",
+          measurementId: "G-JSEHD83FMN"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>

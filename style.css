@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #FED049;
+}
+
+.mainwrap{
+    width: 80%;
+    margin: auto;
+}
+
+.input-holder{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input{
+    width: 80%;
+    height: 10vh;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px #00000020;
+}
+
+#submit{
+    margin-left: 10px;
+    width: 20%;
+    height: 10vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #68B984;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #00000020;
+    transition: 0.3s ease;
+}
+
+#submit:hover{
+    background-color: #3D5656;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    background-color: #F49D1A;
+    padding: 30px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+li.done{
+    text-decoration: line-through;
+}
+
+li .right{
+    display: flex;
+    align-items: center;
+}
+
+.check-box{
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #3D5656;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+li .right img{
+    width: 30px;
+    height: 30px;
+}
+
+.check-box.undone img{
+    opacity: 0;
+}
+
+.check-box.done img{
+    opacity: 1;
+
+}
+
+.delete{
+    border: none;
+}
+
+.delete:hover{
+    background-color: #00000020;
+}
+
+.filter {
+    margin: 30px 0 50px 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #00000080;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.filter span:hover{
+    color: #68B984;
+}
+
+.filter span.active{
+    color: #68B984;
+}
+
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width:400px){
+    .mainwrap{
+        width: 95%;
+    }
+
+    .filter{
+        flex-direction: column;
+    }
+}
